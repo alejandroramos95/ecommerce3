@@ -2,9 +2,6 @@
 import mongoose from "mongoose";
 import ContenedorProductosDaos from "./Producto.dao.js";
 import CarritoModel from "../models/CarritoModel.js";
-/* import * as dotenv from "dotenv";
-dotenv.config();
-const mongourl = process.env.MONGODBATLAS; */
 
 export default class ContenedorCarritosDaos {
   constructor() {

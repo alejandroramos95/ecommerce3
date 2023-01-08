@@ -1,0 +1,120 @@
+{"level":30,"time":1673182265721,"pid":10388,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673182269591,"pid":10388,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673182270425,"pid":10388,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673182322536,"pid":10388,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /logout, method: GET"}
+{"level":30,"time":1673182324760,"pid":10388,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/logout, method: GET"}
+{"level":30,"time":1673182324864,"pid":10388,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673182326024,"pid":10388,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/10, method: GET"}
+{"level":30,"time":1673182349287,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/10, method: GET"}
+{"level":40,"time":1673182349290,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182349308,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/css/estilos.css, method: GET"}
+{"level":40,"time":1673182349309,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182350225,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/10, method: GET"}
+{"level":40,"time":1673182350226,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182350246,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/css/estilos.css, method: GET"}
+{"level":40,"time":1673182350247,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182358127,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/10, method: GET"}
+{"level":40,"time":1673182358127,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182358142,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/css/estilos.css, method: GET"}
+{"level":40,"time":1673182358142,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182363775,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos, method: GET"}
+{"level":40,"time":1673182363776,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182363797,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/css/estilos.css, method: GET"}
+{"level":40,"time":1673182363798,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182378757,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":40,"time":1673182378758,"pid":14456,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673182853874,"pid":2832,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673182854938,"pid":2832,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673182868146,"pid":2832,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/1/productos, method: GET"}
+{"level":30,"time":1673183030419,"pid":1740,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/, method: GET"}
+{"level":40,"time":1673183030423,"pid":1740,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183030446,"pid":1740,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/css/estilos.css, method: GET"}
+{"level":40,"time":1673183030447,"pid":1740,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183033785,"pid":1740,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673183034597,"pid":1740,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673183035934,"pid":1740,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/, method: GET"}
+{"level":30,"time":1673183069880,"pid":2328,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/, method: GET"}
+{"level":30,"time":1673183110446,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/, method: GET"}
+{"level":40,"time":1673183110448,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183110478,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/css/estilos.css, method: GET"}
+{"level":40,"time":1673183110479,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183114626,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673183115445,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673183127475,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":30,"time":1673183150376,"pid":2884,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito/1/productos, method: GET"}
+{"level":30,"time":1673183223938,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: POST"}
+{"level":40,"time":1673183223941,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183228890,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":40,"time":1673183228891,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183228910,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/css/estilos.css, method: GET"}
+{"level":40,"time":1673183228911,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183232791,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673183233621,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673183238413,"pid":14624,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":30,"time":1673183298403,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":40,"time":1673183298405,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183298433,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/css/estilos.css, method: GET"}
+{"level":40,"time":1673183298434,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183302358,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673183303144,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673183305242,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":30,"time":1673183313127,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: POST"}
+{"level":40,"time":1673183313128,"pid":2760,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673183529879,"pid":2824,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: POST"}
+{"level":40,"time":1673183529882,"pid":2824,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673184253194,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":40,"time":1673184253197,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673184253228,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/css/estilos.css, method: GET"}
+{"level":40,"time":1673184253228,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673184258946,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673184259778,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673184261160,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":30,"time":1673184263498,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":30,"time":1673184269918,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: POST"}
+{"level":40,"time":1673184269918,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673184281310,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":30,"time":1673184282789,"pid":10340,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: GET"}
+{"level":30,"time":1673184587808,"pid":9572,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/?admin=true, method: POST"}
+{"level":40,"time":1673184587825,"pid":9572,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673184661993,"pid":9572,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/?admin=true&&req.session.passport.user=true, method: POST"}
+{"level":40,"time":1673184661995,"pid":9572,"hostname":"DESKTOP-U9O2N3U","msg":"Ruta incorrecta"}
+{"level":30,"time":1673184706140,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/?admin=true, method: POST"}
+{"level":30,"time":1673184713626,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/carrito, method: POST"}
+{"level":30,"time":1673184719830,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184720454,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /register, method: GET"}
+{"level":30,"time":1673184720979,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673184722211,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /logout, method: GET"}
+{"level":30,"time":1673184724273,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/logout, method: GET"}
+{"level":30,"time":1673184724284,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184725233,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673184728609,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184729151,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /register, method: GET"}
+{"level":30,"time":1673184729479,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184729748,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /register, method: GET"}
+{"level":30,"time":1673184730059,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673184730824,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /register, method: GET"}
+{"level":30,"time":1673184731163,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184731467,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673184732210,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /register, method: GET"}
+{"level":30,"time":1673184732468,"pid":3356,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184812270,"pid":4188,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /register, method: GET"}
+{"level":30,"time":1673184815355,"pid":4188,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /pepe, method: GET"}
+{"level":30,"time":1673184850119,"pid":13864,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /pepe, method: GET"}
+{"level":30,"time":1673184857076,"pid":9652,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /pepe, method: GET"}
+{"level":30,"time":1673184958813,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184963240,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673184964090,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login-error, method: GET"}
+{"level":30,"time":1673184966415,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673184988876,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /register, method: GET"}
+{"level":30,"time":1673184997694,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/register, method: POST"}
+{"level":30,"time":1673184997881,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673185002618,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/sessions/login, method: POST"}
+{"level":30,"time":1673185002825,"pid":9596,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /home, method: GET"}
+{"level":30,"time":1673185170496,"pid":5724,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /logout, method: GET"}
+{"level":30,"time":1673185175549,"pid":5724,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /logout, method: GET"}
+{"level":30,"time":1673185183143,"pid":7984,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673185221772,"pid":7336,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673185231245,"pid":6308,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673185232626,"pid":6308,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}
+{"level":30,"time":1673185233045,"pid":6308,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /api/productos/10, method: GET"}
+{"level":30,"time":1673185233488,"pid":6308,"hostname":"DESKTOP-U9O2N3U","msg":"Petición entrante -----> Ruta: /login, method: GET"}

@@ -1,34 +1,35 @@
 import express from "express";
 import ContenedorProductosDaos from "../DAOs/Producto.dao.js";
+import { errorFound } from "../services/LoggerPino.js";
+import { validarAdmin, validarUsuario } from "../services/ValidarLogin.js";
 
 const router = express.Router();
 
 const contenedorProductos = new ContenedorProductosDaos();
 
-function validarAdmin(req, res, next) {
-  if (req.query.admin) {
-    next();
-  } else {
-    res.send("Usted no tiene acceso.");
-  }
-}
-
 // Listar todos los productos cargados http://localhost:8080/api/productos DB OKok
-router.get("/", async (req, res) => {
+router.get("/", validarUsuario, async (req, res) => {
   const listaProductos = await contenedorProductos.leerProductos();
-  const response = listaProductos.length
-    ? listaProductos
-    : { error: "No existen productos cargados." };
+  let response;
+  if (listaProductos.length) {
+    response = listaProductos;
+  } else {
+    response = { error: "No existen productos cargados." };
+    errorFound(response);
+  }
   res.send(response);
 });
 
 // Listar producto por ID http://localhost:8080/api/productos/id DB OKok
-router.get("/:id", async (req, res) => {
+router.get("/:id", validarUsuario, async (req, res) => {
   const productoBuscado = await contenedorProductos.listar(req.params.id);
-  console.log(productoBuscado);
-  const response = productoBuscado
-    ? productoBuscado
-    : { error: "No existe el producto." };
+  let response;
+  if (productoBuscado) {
+    response = productoBuscado;
+  } else {
+    response = { error: "No existe el producto." };
+    errorFound(response);
+  }
   res.send(response);
 });
 

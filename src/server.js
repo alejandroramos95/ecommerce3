@@ -4,7 +4,6 @@ import routerCarrito from "./controllers/carritosController.js";
 import routerProductos from "./controllers/productosController.js";
 import { router, passport } from "./controllers/sessionController.js";
 import { createOnMongoStore } from "./services/UtilsSession.js";
-
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -26,21 +25,15 @@ app.use(passport.session());
 
 app.use("/api/sessions/", router);
 
-// VALIDAR SESION O URLS SIN RESTRICCION
-let urlValidation = {
-  "/logout": true,
-  "/register": true,
-  "/register-error": true,
-  "/login-error": true,
-};
-
 app.use((req, res, next) => {
-  if (req.session.passport && req.session.passport.user)
+  if (req.session.passport && req.session.passport.user) {
     res.cookie("userEmail", req.session?.passport.user);
-  if (req.session?.passport || urlValidation[req.originalUrl]) {
+    res.cookie("userInfo", true);
     next();
   } else {
-    res.sendFile(__dirname + `/public/login.html`);
+    res.cookie("userEmail", `Aun no ha ingresado`);
+    res.cookie("userInfo", false);
+    next();
   }
 });
 

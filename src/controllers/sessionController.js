@@ -56,6 +56,7 @@ router.post("/register", async (req, res) => {
     direccion: req.body.registerDireccion,
     edad: req.body.registerEdad,
     contacto: req.body.registerContacto,
+    //avatar: req.body.registerAvatar
   };
   const response = await sessionService.registrarUsuario(registerData);
   if (response) {
