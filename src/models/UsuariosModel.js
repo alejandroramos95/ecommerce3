@@ -7,6 +7,7 @@ const usuariosSchema = new mongoose.Schema({
   direccion: { type: String, required: true },
   edad: { type: Number, required: true },
   contacto: { type: Number, required: true },
+  avatar: { type: String, required: true },
 });
 
 const UsuariosModel = mongoose.model("usuarios", usuariosSchema);

@@ -31,7 +31,6 @@ export async function enviarEmailRegistro(newUser) {
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log(info);
   } catch (error) {
     console.log(err);
   }
@@ -65,7 +64,6 @@ export async function enviarEmailCompra(email, carrito) {
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log(info);
   } catch (error) {
     console.log(err);
   }

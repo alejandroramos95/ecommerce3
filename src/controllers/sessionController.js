@@ -7,7 +7,7 @@ const sessionService = new SessionService();
 import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import { enviarEmailRegistro } from "../services/Nodemailer.js";
-import upload from "./multerController.js";
+import upload from "../services/Multer.js";
 
 // LOGIN STRATEGY
 passport.use(
@@ -57,10 +57,11 @@ router.post("/register", upload.single("image"), async (req, res) => {
     direccion: req.body.registerDireccion,
     edad: req.body.registerEdad,
     contacto: req.body.registerContacto,
+    avatar: req.file.path,
   };
-
   const response = await sessionService.registrarUsuario(registerData);
   if (response) {
+    //console.log("es la imagen?", req.file); GG
     enviarEmailRegistro(registerData);
     res.redirect("/login");
   } else {
