@@ -61,7 +61,6 @@ router.post("/register", upload.single("image"), async (req, res) => {
   };
   const response = await sessionService.registrarUsuario(registerData);
   if (response) {
-    //console.log("es la imagen?", req.file); GG
     enviarEmailRegistro(registerData);
     res.redirect("/login");
   } else {
