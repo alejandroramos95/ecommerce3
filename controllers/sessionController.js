@@ -50,7 +50,6 @@ router.post(
 
 // REGISTRO
 router.post("/register", upload.single("image"), async (req, res) => {
-  console.log("testeandophone", req.body);
   const registerData = {
     email: req.body.registerEmail,
     password: req.body.registerPassword,
