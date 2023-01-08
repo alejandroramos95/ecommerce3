@@ -7,6 +7,7 @@ const sessionService = new SessionService();
 import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import { enviarEmailRegistro } from "../services/Nodemailer.js";
+import upload from "./multerController.js";
 
 // LOGIN STRATEGY
 passport.use(
@@ -48,7 +49,7 @@ router.post(
 );
 
 // REGISTRO
-router.post("/register", async (req, res) => {
+router.post("/register", upload.single("image"), async (req, res) => {
   const registerData = {
     email: req.body.registerEmail,
     password: req.body.registerPassword,
@@ -56,8 +57,8 @@ router.post("/register", async (req, res) => {
     direccion: req.body.registerDireccion,
     edad: req.body.registerEdad,
     contacto: req.body.registerContacto,
-    //avatar: req.body.registerAvatar
   };
+
   const response = await sessionService.registrarUsuario(registerData);
   if (response) {
     enviarEmailRegistro(registerData);

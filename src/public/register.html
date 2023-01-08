@@ -18,7 +18,12 @@
       <div class="jumbotron">
         <h1>Registrarse</h1>
         <br />
-        <form action="/api/sessions/register" method="post" autocomplete="off">
+        <form
+          action="/api/sessions/register"
+          enctype="multipart/form-data"
+          method="post"
+          autocomplete="off"
+        >
           <div class="form-group">
             <label for="registerEmail">Ingrese su email</label>
             <input
@@ -78,6 +83,10 @@
               name="registerContacto"
               required
             />
+          </div>
+          <div class="form-group">
+            <label for="image">Seleccione una foto de Perfil</label>
+            <input type="file" name="image" required />
           </div>
           <button class="btn btn-success mt-3">Enviar</button>
         </form>
