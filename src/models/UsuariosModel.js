@@ -6,7 +6,7 @@ const usuariosSchema = new mongoose.Schema({
   nombre: { type: String, required: true },
   direccion: { type: String, required: true },
   edad: { type: Number, required: true },
-  contacto: { type: Number, required: true },
+  contacto: { type: String, required: true },
   avatar: { type: String, required: true },
 });
 

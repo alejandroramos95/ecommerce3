@@ -2,15 +2,20 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Registrarse</title>
+    <link rel="stylesheet" href="css/estilos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
 
   <body>
@@ -74,16 +79,12 @@
               required
             />
           </div>
+
           <div class="form-group">
-            <label for="registerContacto">Ingrese su Numero de contacto</label>
-            <input
-              id="registerContacto"
-              class="form-control"
-              type="number"
-              name="registerContacto"
-              required
-            />
+            <label for="phone">Enter your phone number:</label>
+            <input id="phone" type="tel" name="phone" required />
           </div>
+
           <div class="form-group">
             <label for="image">Seleccione una foto de Perfil</label>
             <input type="file" name="image" required />
@@ -101,4 +102,11 @@
       </div>
     </div>
   </body>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </html>

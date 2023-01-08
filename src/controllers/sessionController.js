@@ -50,13 +50,14 @@ router.post(
 
 // REGISTRO
 router.post("/register", upload.single("image"), async (req, res) => {
+  console.log("testeandophone", req.body);
   const registerData = {
     email: req.body.registerEmail,
     password: req.body.registerPassword,
     nombre: req.body.registerNombre,
     direccion: req.body.registerDireccion,
     edad: req.body.registerEdad,
-    contacto: req.body.registerContacto,
+    contacto: req.body.phone,
     avatar: req.file.path,
   };
   const response = await sessionService.registrarUsuario(registerData);
