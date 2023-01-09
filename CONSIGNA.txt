@@ -35,7 +35,7 @@ El usuario iniciará la acción de pedido en la vista del carrito.
 Será enviado una vez finalizada la elección para realizar la compra de productos.
 El email contendrá en su cuerpo la lista completa de productos a comprar
 y en el asunto la frase 'nuevo pedido de ' y el nombre y email del usuario que los solicitó.
-(FALTA COMPLETAR)
+(OK)
 
 >>Aspectos a incluir<<
 
@@ -54,4 +54,3 @@ hacia la misma consola. En el caso de errores moderados ó graves el log tendrá
     Realizar una prueba de performance en modo local, con y sin cluster, utilizando Artillery
 en el endpoint del listado de productos (con el usuario vez logueado). Verificar los resultados.
 (FALTA)
-
