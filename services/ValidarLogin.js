@@ -3,6 +3,9 @@
 // ATENCION, SI VALIDAR USUARIO ESTA NEGADO ES PARA PODER UTILIZAR POSTMAN
 // SIN TENER PROBLEMAS DE VALIDACION DE LOGIN
 
+// CONDICION SIN NEGAR, USO COMPLETO DE NAVEGADOR - POSTMAN NO FUNCIONA
+// CONDICION NEGADA, USO DE POSTMAN - FRONT NAVEGADOR NO FUNCIONA
+
 export function validarUsuario(req, res, next) {
   console.log(req.cookies.userInfo);
   if (req.cookies.userInfo === "true") {
@@ -19,3 +22,5 @@ export function validarAdmin(req, res, next) {
     res.send("Usted no tiene acceso.");
   }
 }
+
+// REVISAR DOCUMENTACION POSTMAN PARA USO DE COOKIES ?

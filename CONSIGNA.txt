@@ -20,7 +20,7 @@ tendrá acceso a un menú en su vista, a modo de barra de navegación.
 (OK)
 
     - Esto le permitirá ver los productos totales con los filtros que se hayan implementado
-y su propio carrito de compras e información propia (datos de registro con la foto). (FALTA)
+y su propio carrito de compras e información propia (datos de registro con la foto). (OK)
 
     - Además, dispondrá de una opción para desloguearse del sistema. (OK)
 

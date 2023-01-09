@@ -15,7 +15,7 @@ export function createOnMongoStore() {
     secret: "sh21501295asdjk",
     resave: false,
     saveUninitialized: false,
-    cookie: { maxAge: 60000 },
+    cookie: { maxAge: 600000000 },
   });
 }
 

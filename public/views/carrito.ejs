@@ -2,7 +2,7 @@
   <head>
     <div class="container mt-3">
       <h1 class="alert alert-success">
-        Usuario logueado:
+        Usuario logueado: <%= email %>
         <button
           class="btn btn-warning float-right mt-2"
           onclick="location.href='/logout'"
@@ -12,12 +12,16 @@
       </h1>
     </div>
     <form class="container mt-3" method="POST">
+      <div>
         <button
           class="btn btn-warning float-left mt-2"
-          onclick='action="carrito"'
+          onclick='action="/api/carrito/"'
         >
         CREAR CARRITO
         </button>
+      </div>
+    </form>
+      </div>
       </form>
     <div class="container mt-3">
       <button
@@ -43,7 +47,7 @@
             Ver Productos
           </button>
         </form>
-    <meta charset="UTF-8" />
+    <meta charset="ISO-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -62,16 +66,20 @@
           <table class="table table-dark">
             <tr>
               <th>PRODUCTOS EN SU CARRITO</th>
-              <% for (var i = 0; i < response.length; i++) { %>
-                <td><%= response[i]._id %></td>
+                <td><%= carrito %></td>
             </tr>
             <tr>
-              <% for (var j = 0; j < response[i].productos.length; j++) { %>
-              <td><%= response[i].productos[j].Nombre %></td>
-              <td><%= response[i].productos[j].Precio %></td>
+              <% for (var i = 0; i < response.length; i++) { %>
+                <% if(response[i]._id == carrito){ %>
+                  <% for (var j = 0; j < response[i].productos.length; j++) { %>
+                    <tr>
+                  <td><%= response[i].productos[j].Nombre %></td>
+                  <td><%= response[i].productos[j].Precio %></td>
+                    </tr>
+                  <% } %>
+                <% } %>
+              <% } %>
             </tr>
-            <% } %>
-            <% } %>
           </table>
           <table class="table table-dark" id="vista_productos"></table>
         </div>
