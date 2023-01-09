@@ -77,4 +77,17 @@ router.get("/logout", (req, res) => {
   res.redirect("/login");
 });
 
+// GET PERFIL DATA
+
+router.get("/perfil", async (req, res) => {
+  const profileData = await sessionService.buscarUsuarioPorEmail(
+    req.cookies.userEmail
+  );
+  if (profileData) {
+    res.render("perfil", { profileData });
+  } else {
+    res.redirect("/login");
+  }
+});
+
 export { router, passport };

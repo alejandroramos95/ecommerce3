@@ -10,7 +10,7 @@ const contenedorCarritos = new ContenedorCarritosDaos();
 // Crear carrito http://localhost:8080/api/carrito/ DB OKok
 router.post("/", validarUsuario, async (req, res) => {
   const carritoCreado = await contenedorCarritos.crearCarritoEnDB();
-  res.send({ id: carritoCreado });
+  res.redirect("/");
 });
 
 // Eliminar carrito http://localhost:8080/api/carrito/1 DB OKok
@@ -29,7 +29,7 @@ router.get("/", validarUsuario, async (req, res) => {
     response = { error: "No hay carritos cargados." };
     errorFound(response);
   }
-  res.send(response);
+  res.render("carrito", { response });
 });
 
 // Listar productos dentros del carrito por ID http://localhost:8080/api/carrito/1/productos DB OKok

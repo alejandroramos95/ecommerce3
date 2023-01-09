@@ -7,15 +7,14 @@ import { createOnMongoStore } from "./services/UtilsSession.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
-import { createServer } from "http";
-import { Server as IOServer } from "socket.io";
 
 const app = express();
-const httpServer = new createServer(app);
-const io = new IOServer(httpServer);
 
 // Public statement
 app.use(express.static("public"));
+
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/public/views");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -57,24 +56,8 @@ app.all("*", (req, res) => {
   });
 });
 
-// WEBSOCKET
-
-// Refresh Vista Productos
-import ContenedorProductosDaos from "./DAOs/Producto.dao.js";
-const contenedorProductos = new ContenedorProductosDaos();
-
-export async function refreshProducts() {
-  io.sockets.emit("lista-productos", await contenedorProductos.leerProductos());
-}
-io.on("connect", async () => {
-  io.sockets.emit("lista-productos", await contenedorProductos.leerProductos());
-});
-
 const PORT = 8080;
-
-httpServer.listen(PORT, () => {
-  console.log(
-    `Servidor http escuchando en el puerto ${httpServer.address().port}`
-  );
+const server = app.listen(PORT, () => {
+  console.log(`Servidor http escuchando en el puerto ${server.address().port}`);
 });
-httpServer.on("error", (error) => console.log(`Error en servidor ${error}`));
+server.on("error", (error) => console.log(`Error en servidor ${error}`));

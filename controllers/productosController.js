@@ -2,7 +2,6 @@ import express from "express";
 import ContenedorProductosDaos from "../DAOs/Producto.dao.js";
 import { errorFound } from "../services/LoggerPino.js";
 import { validarAdmin, validarUsuario } from "../services/ValidarLogin.js";
-import { refreshProducts } from "../server.js";
 
 const router = express.Router();
 
@@ -18,7 +17,7 @@ router.get("/", validarUsuario, async (req, res) => {
     response = { error: "No existen productos cargados." };
     errorFound(response);
   }
-  res.send(response);
+  res.render("productos", { response });
 });
 
 // Listar producto por ID http://localhost:8080/api/productos/id DB OKok
@@ -50,21 +49,18 @@ Producto ejemplo para Postman
 router.post("/", validarAdmin, async (req, res) => {
   console.log(req.body);
   const response = await contenedorProductos.guardoProductoEnDB(req.body);
-  refreshProducts();
   res.send(response);
 });
 
 // Eliminar producto de la lista por ID http://localhost:8080/api/productos/id?admin=true DB OKok
 router.delete("/:id", validarAdmin, async (req, res) => {
   const productoBorrado = await contenedorProductos.borrar(req.params.id);
-  refreshProducts();
   res.send(productoBorrado);
 });
 
 // Actualizar producto de la lista por ID http://localhost:8080/api/productos/id?admin=true DB OKok
 router.put("/:id", validarAdmin, (req, res) => {
   contenedorProductos.actualizar(req.body, req.params.id);
-  refreshProducts();
   res.status(200).json({});
 });
 

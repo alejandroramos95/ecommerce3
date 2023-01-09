@@ -12,29 +12,30 @@
       </h1>
     </div>
   </div>
-  <div class="container mt-3">
-    <button
-      class="btn btn-warning float-right mt-2"
-      onclick="location.href='/perfil'"
-    >
+  <form class="container mt-3" action="api/sessions/perfil" method="GET">
+      <button
+        class="btn btn-warning float-right mt-2"
+        onclick='action="/api/sessions/perfil"'
+      >
       Perfil
-    </button>
-  </div>
-  <div class="container mt-3">
-    <button
-      class="btn btn-warning float-right mt-2"
-      onclick="location.href='/carrito'"
-    >
+      </button>
+    </form>
+    <form class="container mt-3" action="/api/carrito" method="GET">
+        <button
+          class="btn btn-warning float-right mt-2"
+          onclick='action="/api/carrito"'
+        >
       Ver Carrito
-    </button>
-  </div>
-  <div class="container mt-3">
+        </button>
+      </form>
+  <form class="container mt-3" action="/api/productos" method="GET">
     <button
       class="btn btn-warning float-right mt-2"
-      onclick="location.href='/productos'"
+      onclick='action="/api/productos"'
     >
       Ver Productos
     </button>
+  </form>
   </div>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,7 +46,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/estilos.css" />
-    <script src="/socket.io/socket.io.js"></script>
   </head>
   <body>
     <script src="index.js">
