@@ -2,7 +2,6 @@ import express from "express";
 import ContenedorCarritosDaos from "../DAOs/Carrito.dao.js";
 import { errorFound } from "../services/LoggerPino.js";
 import { validarUsuario } from "../services/ValidarLogin.js";
-import { refreshCarrito } from "../server.js";
 
 const router = express.Router();
 

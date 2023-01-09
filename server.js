@@ -70,17 +70,6 @@ io.on("connection", async () => {
   io.sockets.emit("lista-productos", await contenedorProductos.leerProductos());
 });
 
-// Refresh Vista Carrito
-import ContenedorCarritosDaos from "./DAOs/Carrito.dao.js";
-const contenedorCarritos = new ContenedorCarritosDaos();
-
-export async function refreshCarrito(idCarr) {
-  io.sockets.emit("carrito", await contenedorCarritos.obtenerCarrito(idCarr));
-}
-io.on("connection", async () => {
-  io.sockets.emit("carrito", await contenedorProductos.leerProductos());
-});
-
 const PORT = 8080;
 
 httpServer.listen(PORT, () => {
