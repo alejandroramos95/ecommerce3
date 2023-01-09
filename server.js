@@ -66,7 +66,7 @@ const contenedorProductos = new ContenedorProductosDaos();
 export async function refreshProducts() {
   io.sockets.emit("lista-productos", await contenedorProductos.leerProductos());
 }
-io.on("connection", async () => {
+io.on("connect", async () => {
   io.sockets.emit("lista-productos", await contenedorProductos.leerProductos());
 });
 

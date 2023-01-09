@@ -21,39 +21,14 @@ function renderProds(data) {
   const html = data
     .map((prod) => {
       return `<tr>
-                      <td><img
-                        width="50"
-                        src=${prod.LinkFoto}
-                        alt="not found"
-                      /></td>
-                     <td>${prod.Nombre}</td>
-                     <td>${prod.Precio}</td>
-                     
-                   </tr>`;
-    })
-    .join(" ");
-
-  document.getElementById("vista_productos").innerHTML = html;
-}
-
-// Carrito websocket
-socket.on("carrito", (carrito) => {
-  renderProds(carrito);
-});
-
-function renderProds(data) {
-  const html = data
-    .map((prod) => {
-      return `<tr>
-                      <td><img
-                        width="50"
-                        src=${prod.LinkFoto}
-                        alt="not found"
-                      /></td>
-                     <td>${prod.Nombre}</td>
-                     <td>${prod.Precio}</td>
-                     
-                   </tr>`;
+                    <td><img
+                    width="50"
+                    src=${prod.LinkFoto}
+                    alt="not found"
+                    /></td>
+                    <td>${prod.Nombre}</td>
+                    <td>${prod.Precio}</td>
+                    </tr>`;
     })
     .join(" ");
 
