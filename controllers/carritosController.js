@@ -3,6 +3,7 @@ import ContenedorCarritosDaos from "../DAOs/Carrito.dao.js";
 import { errorFound } from "../services/LoggerPino.js";
 import { validarUsuario } from "../services/ValidarLogin.js";
 import SessionService from "../services/Session.js";
+import { enviarEmailCompra } from "../services/Nodemailer.js";
 
 const router = express.Router();
 
@@ -95,5 +96,16 @@ router.delete(
     res.send(response);
   }
 );
+
+// COMPRA CARRITO
+
+router.post("/comprar", async (req, res) => {
+  const user = await sessionService.buscarUsuarioPorEmail(
+    req.cookies.userEmail
+  );
+  const carrito = await contenedorCarritos.obtenerCarrito(user.carrito);
+  enviarEmailCompra(user.email, carrito);
+  res.render("compra", { user });
+});
 
 export default router;

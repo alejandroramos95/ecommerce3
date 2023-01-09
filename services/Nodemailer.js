@@ -37,6 +37,14 @@ export async function enviarEmailRegistro(newUser) {
 }
 
 export async function enviarEmailCompra(email, carrito) {
+  let newArray = [];
+  for (let i = 0; i < carrito.productos.length; i++) {
+    const element = [
+      `Producto: ${carrito.productos[i].Nombre}, Precio: ${carrito.productos[i].Precio}`,
+    ];
+    newArray.push(element);
+  }
+
   const USER_EMAIL = "otha.hermiston@ethereal.email";
 
   const transporter = createTransport({
@@ -58,7 +66,7 @@ export async function enviarEmailCompra(email, carrito) {
     <p>
     <span style="color: green;">DETALLE DE COMPRA:</span>
     </p>
-    <p>${carrito}</p>??
+    ${newArray} 
     `,
   };
 
