@@ -29,4 +29,14 @@ export default class SessionService {
     await newUser.save();
     return true;
   }
+
+  async actualizarUsuario(email, idCar) {
+    await this.conectarDB();
+    const user = await this.buscarUsuarioPorEmail(email);
+    console.log("desdedb", user, idCar);
+    await UsuariosModel.findByIdAndUpdate(user._id, {
+      $set: { carrito: idCar },
+    });
+    return true;
+  }
 }

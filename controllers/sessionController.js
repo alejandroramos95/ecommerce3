@@ -58,6 +58,7 @@ router.post("/register", upload.single("image"), async (req, res) => {
     edad: req.body.registerEdad,
     contacto: req.body.phone,
     avatar: req.file.path,
+    carrito: "",
   };
   const response = await sessionService.registrarUsuario(registerData);
   if (response) {

@@ -2,15 +2,20 @@ import express from "express";
 import ContenedorProductosDaos from "../DAOs/Producto.dao.js";
 import { errorFound } from "../services/LoggerPino.js";
 import { validarAdmin, validarUsuario } from "../services/ValidarLogin.js";
+import SessionService from "../services/Session.js";
 
 const router = express.Router();
 
 const contenedorProductos = new ContenedorProductosDaos();
+const sessionService = new SessionService();
 
 // Listar todos los productos cargados http://localhost:8080/api/productos DB OKok
 router.get(
   "/",
   /* validarUsuario, */ async (req, res) => {
+    const user = await sessionService.buscarUsuarioPorEmail(
+      req.cookies.userEmail
+    );
     const listaProductos = await contenedorProductos.leerProductos();
     let response;
     if (listaProductos.length) {
@@ -19,7 +24,7 @@ router.get(
       response = { error: "No existen productos cargados." };
       errorFound(response);
     }
-    res.render("productos", { response });
+    res.render("productos", { response, user });
   }
 );
 
@@ -53,7 +58,6 @@ Producto ejemplo para Postman
 */
 
 router.post("/", validarAdmin, async (req, res) => {
-  console.log(req.body);
   const response = await contenedorProductos.guardoProductoEnDB(req.body);
   res.send(response);
 });

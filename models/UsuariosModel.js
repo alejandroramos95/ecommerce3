@@ -8,6 +8,7 @@ const usuariosSchema = new mongoose.Schema({
   edad: { type: Number, required: true },
   contacto: { type: String, required: true },
   avatar: { type: String, required: true },
+  carrito: { type: String },
 });
 
 const UsuariosModel = mongoose.model("usuarios", usuariosSchema);

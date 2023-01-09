@@ -14,7 +14,10 @@ router.post(
   "/",
   /* validarUsuario, */ async (req, res) => {
     const carritoCreado = await contenedorCarritos.crearCarritoEnDB();
-    res.cookie("idCarritoNuevo", carritoCreado);
+    const userCarr = await sessionService.actualizarUsuario(
+      req.cookies.userEmail,
+      carritoCreado
+    );
     res.redirect("/api/carrito");
   }
 );
@@ -32,6 +35,9 @@ router.delete(
 router.get(
   "/",
   /* validarUsuario, */ async (req, res) => {
+    const user = await sessionService.buscarUsuarioPorEmail(
+      req.cookies.userEmail
+    );
     let response;
     const listaCarritos = await contenedorCarritos.leerCarritos();
     if (listaCarritos.length) {
@@ -42,8 +48,7 @@ router.get(
     }
     res.render("carrito", {
       response,
-      email: req.cookies.userEmail,
-      carrito: req.cookies.idCarritoNuevo,
+      user,
     });
   }
 );

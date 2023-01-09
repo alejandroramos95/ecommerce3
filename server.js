@@ -28,6 +28,8 @@ app.use(passport.session());
 
 app.use("/api/sessions/", router);
 
+// PARTIAL LOGIN VALIDATION
+
 app.use((req, res, next) => {
   if (req.session.passport && req.session.passport.user) {
     res.cookie("userEmail", req.session?.passport.user);

@@ -35,6 +35,7 @@ export default class ContenedorCarritosDaos {
       const nuevoCarrito = new CarritoModel();
       console.log("ID del carrito creado: ", nuevoCarrito.id);
       await nuevoCarrito.save();
+      return nuevoCarrito.id;
     } catch (e) {}
   }
 
